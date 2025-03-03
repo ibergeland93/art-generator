@@ -1,0 +1,14 @@
+###
+1. Set up project folder structure
+2. Source virtual environment --> source venv/bin/activate
+3. Clone the StyleGAN3 Repository
+4. Install dependencies
+5. Convert data to RGB data (if error) --> convert_to_rgb.py
+6. Convert data to tfrecords data --> 
+	 python stylegan3/dataset_tool.py 
+	 --source=data/my_images/art_abstract/converted_data/rgb_data 
+	 --dest=data/my_images/art_abstract/tfrecords_data 
+	 --resolution=256x25
+7. Train the model
+
+python stylegan3/train.py --outdir=output/train --cfg=stylegan3-t --data=data/my_images/art_abstract/tfrecords_data --gpus=0 --batch=16 --gamma=8.2

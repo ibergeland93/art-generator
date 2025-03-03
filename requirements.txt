@@ -1,0 +1,17 @@
+torch>=1.9.0
+torchvision>=0.10.0
+numpy
+click
+requests
+tqdm
+ninja
+imageio
+imageio-ffmpeg
+scipy
+pillow
+matplotlib
+psutil
+typing-extensions
+kagglehub
+shutil
+os
